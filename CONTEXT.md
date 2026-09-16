@@ -24,6 +24,10 @@ _Avoid_: Rating, grade, tier
 One short-term-rental property as recorded by AirROI, identified by its listing ID.
 _Avoid_: Property, unit, rental, Airbnb
 
+**Active listing**:
+A listing whose trailing-twelve-month revenue and occupancy are both non-zero and whose revenue the monthly history corroborates. The modelling population is drawn from these.
+_Avoid_: Valid listing, live listing
+
 **Dormant listing**:
 A listing whose trailing-twelve-month revenue and occupancy are both zero because the property was not operating, as distinct from one whose figures are simply missing. Dormant listings are excluded from model training.
 _Avoid_: Inactive listing, zero listing, dead listing
@@ -31,6 +35,10 @@ _Avoid_: Inactive listing, zero listing, dead listing
 **Trailing twelve months (TTM)**:
 The August 2025 to July 2026 window over which listing revenue and occupancy are measured.
 _Avoid_: Annual, last year, prior period
+
+**Predicted STR performance potential**:
+The revenue or occupancy a trained model predicts for a grid cell's location and demographic characteristics. It is a modelled expectation for that location, not an observation of any property.
+_Avoid_: Predicted performance, forecast, observed performance
 
 **Municipality**:
 One of the 30 city or municipal administrative units of Laguna. The coarsest geographic grouping used in reporting.
