@@ -1,0 +1,27 @@
+{
+  "source": "Geofabrik Philippines extract, https://download.geofabrik.de/asia/philippines-latest.osm.pbf",
+  "retrieved_at": "2026-09-16T16:26:23.110824+00:00",
+  "pbf_bytes": 606574480,
+  "pbf_md5": "90c3bdf2120699099ff4a7cdd964892e",
+  "extraction_bbox": [
+    120.95,
+    13.9,
+    121.75,
+    14.6
+  ],
+  "poi_records_before_boundary_filter": 88302,
+  "poi_records_after_boundary_filter": 18280,
+  "tourist_attractions": 370,
+  "transport_facilities": 143,
+  "water_way_polygons": 954,
+  "water_relation_polygons": 28,
+  "water_polygons_total": 247,
+  "poi_category_counts": {
+    "commercial": 6012,
+    "other_facilities": 5219,
+    "recreation": 2947,
+    "restaurants": 1983,
+    "transportation": 1749,
+    "tourist_attraction": 370
+  }
+}
