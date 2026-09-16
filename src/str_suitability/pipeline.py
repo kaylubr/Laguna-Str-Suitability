@@ -166,7 +166,7 @@ def run_pipeline() -> dict:
 
     for name, result in (("revenue", revenue), ("occupancy", occupancy)):
         features[f"predicted_{name}"] = result["model"].predict(features[FEATURE_COLUMNS])
-        features[f"predicted_{name}"].to_frame().to_parquet(
+        features[["cell_id", f"predicted_{name}"]].to_parquet(
             config.PROCESSED_DIR / f"predicted_{name}.parquet", index=False
         )
 

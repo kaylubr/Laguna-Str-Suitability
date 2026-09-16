@@ -22,7 +22,8 @@ individual property, and it is not field-verified.
 7. Evaluate with RMSE, MAE and R² on a held-out test set, then permutation importance.
 8. Apply both models to every eligible grid cell, producing predicted STR performance potential.
 9. Normalize the five suitability indicators, weight them with the Entropy Weight Method, and sum.
-10. Classify with Jenks natural breaks into five classes and export for visualization.
+10. Classify with Jenks Natural Breaks implemented using the Fisher-Jenks algorithm into five
+    classes, and export for visualization.
 
 Random Forest prediction is deliberately separate from composite suitability scoring: the models
 predict revenue and occupancy, and do not produce the suitability score themselves.
@@ -48,14 +49,18 @@ variables kept outside the models and indicator set (0013).
 
 ## Status
 
-Stages 1–8 are implemented and run. The models are fitted on 1,231 listings across 288 of the
-1,764 cells, and predicted revenue and occupancy are produced for every eligible cell.
+All ten methodology stages are implemented and run over the 1,764 retained grid cells. The models
+are fitted on 1,231 listings across 288 of those cells; predictions, entropy weights, composite
+scores and suitability classes are produced for every retained cell.
 
-The composite suitability stage (9–10) is **not implemented**: Chapter 3's normalization and
-entropy-weighting formulas are supplied as images that were not available, so the entropy constant,
-the zero-log convention and the reverse-normalization form are unconfirmed and nothing is guessed
-in their place. Input-side assertions for that stage are already in place in
-`str_suitability.suitability.validate`.
+Chapter 3 carries its normalization and entropy-weighting formulas as images, so the implementation
+follows the mathematical specification supplied for the study, including the convention that a zero
+proportion contributes nothing to the entropy sum. Input-side assertions run before the entropy
+weighting, the weights are asserted to sum to 1, and classification is Jenks Natural Breaks
+implemented using the Fisher-Jenks algorithm.
+
+Suitability scores are relative within Laguna and are built on predicted STR performance potential
+rather than observed performance, since only 288 of the 1,764 cells contain an active listing.
 
 ## Environment
 

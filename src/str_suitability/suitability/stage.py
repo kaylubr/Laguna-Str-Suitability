@@ -4,6 +4,7 @@ from str_suitability.config import SUITABILITY_INDICATORS
 from str_suitability.suitability.classify import (
     CLASS_COUNT,
     CLASS_LABELS,
+    CLASSIFICATION_METHOD,
     SUITABILITY_CLASS_COLUMN,
     classify_suitability,
 )
@@ -38,6 +39,7 @@ def compute_suitability(grid: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
         "cells": int(len(result)),
         "indicators": list(SUITABILITY_INDICATORS),
         "class_count": CLASS_COUNT,
+        "classification_method": CLASSIFICATION_METHOD,
         "weights": {
             indicator_from_normalized(column): float(weight) for column, weight in weights.items()
         },

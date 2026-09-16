@@ -3,9 +3,12 @@ import pandas as pd
 
 CLASS_COUNT = 5
 SUITABILITY_CLASS_COLUMN = "suitability_class"
+CLASSIFICATION_METHOD = (
+    "Jenks Natural Breaks classification implemented using the Fisher-Jenks algorithm"
+)
 
 CLASS_LABELS = (
-    "Very Low / Unsuitable",
+    "Very Low Suitability",
     "Low Suitability",
     "Moderate Suitability",
     "High Suitability",

@@ -165,7 +165,7 @@ def test_classification_returns_exactly_five_classes():
     labels, report = classify_suitability(scores)
     assert labels.nunique() == 5
     assert list(CLASS_LABELS) == [
-        "Very Low / Unsuitable",
+        "Very Low Suitability",
         "Low Suitability",
         "Moderate Suitability",
         "High Suitability",
@@ -178,7 +178,7 @@ def test_classification_orders_labels_by_score():
     scores = pd.Series([0.1, 0.2, 0.3, 0.9, 1.0])
     labels, _ = classify_suitability(scores)
     assert labels.iloc[-1] == "Very High Suitability"
-    assert labels.iloc[0] == "Very Low / Unsuitable"
+    assert labels.iloc[0] == "Very Low Suitability"
 
 
 def test_stage_scores_and_classifies_every_cell():
