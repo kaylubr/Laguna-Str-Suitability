@@ -1,0 +1,192 @@
+{
+  "source": "OpenStreetMap API, api.openstreetmap.org/api/0.6 relation geometry",
+  "province_relation_id": 1503483,
+  "retrieved_at": "2026-09-16T15:21:00.259938+00:00",
+  "province_features": 1,
+  "municipality_features": 30,
+  "municipality_area_km2": {
+    "Alaminos": 60.517,
+    "Bay": 61.7,
+    "Bi\u00f1an": 63.17,
+    "Cabuyao": 79.308,
+    "Calamba": 167.632,
+    "Calauan": 83.975,
+    "Cavinti": 128.606,
+    "Famy": 31.557,
+    "Kalayaan": 52.836,
+    "Liliw": 41.22,
+    "Los Ba\u00f1os": 86.229,
+    "Luisiana": 81.982,
+    "Lumban": 102.531,
+    "Mabitac": 44.871,
+    "Magdalena": 33.358,
+    "Majayjay": 64.823,
+    "Nagcarlan": 80.372,
+    "Paete": 74.13,
+    "Pagsanjan": 27.087,
+    "Pakil": 49.164,
+    "Pangil": 56.58,
+    "Pila": 37.813,
+    "Rizal": 18.982,
+    "San Pablo": 188.645,
+    "San Pedro": 49.969,
+    "Santa Cruz": 61.839,
+    "Santa Maria": 115.441,
+    "Santa Rosa": 89.664,
+    "Victoria": 41.215,
+    "Siniloan": 33.199
+  },
+  "municipality_psgc_refs": [
+    {
+      "name": "Alaminos",
+      "psgc_ref": "0403401000",
+      "population": "53589"
+    },
+    {
+      "name": "Bay",
+      "psgc_ref": "0403402000",
+      "population": "69802"
+    },
+    {
+      "name": "Bi\u00f1an",
+      "psgc_ref": "0403403000",
+      "population": "584479"
+    },
+    {
+      "name": "Cabuyao",
+      "psgc_ref": "0403404000",
+      "population": "365202"
+    },
+    {
+      "name": "Calamba",
+      "psgc_ref": "0403405000",
+      "population": "575046"
+    },
+    {
+      "name": "Calauan",
+      "psgc_ref": "0403406000",
+      "population": "89670"
+    },
+    {
+      "name": "Cavinti",
+      "psgc_ref": "0403407000",
+      "population": "24740"
+    },
+    {
+      "name": "Famy",
+      "psgc_ref": "0403408000",
+      "population": "17668"
+    },
+    {
+      "name": "Kalayaan",
+      "psgc_ref": "0403409000",
+      "population": "25243"
+    },
+    {
+      "name": "Liliw",
+      "psgc_ref": "0403410000",
+      "population": "39976"
+    },
+    {
+      "name": "Los Ba\u00f1os",
+      "psgc_ref": "0403411000",
+      "population": "117030"
+    },
+    {
+      "name": "Luisiana",
+      "psgc_ref": "0403412000",
+      "population": "21824"
+    },
+    {
+      "name": "Lumban",
+      "psgc_ref": "0403413000",
+      "population": "32793"
+    },
+    {
+      "name": "Mabitac",
+      "psgc_ref": "0403414000",
+      "population": "21748"
+    },
+    {
+      "name": "Magdalena",
+      "psgc_ref": "0403415000",
+      "population": "28131"
+    },
+    {
+      "name": "Majayjay",
+      "psgc_ref": "0403416000",
+      "population": "27792"
+    },
+    {
+      "name": "Nagcarlan",
+      "psgc_ref": "0403417000",
+      "population": "66351"
+    },
+    {
+      "name": "Paete",
+      "psgc_ref": "0403418000",
+      "population": "25254"
+    },
+    {
+      "name": "Pagsanjan",
+      "psgc_ref": "0403419000",
+      "population": "45602"
+    },
+    {
+      "name": "Pakil",
+      "psgc_ref": "0403420000",
+      "population": "23972"
+    },
+    {
+      "name": "Pangil",
+      "psgc_ref": "0403421000",
+      "population": "25318"
+    },
+    {
+      "name": "Pila",
+      "psgc_ref": NaN,
+      "population": NaN
+    },
+    {
+      "name": "Rizal",
+      "psgc_ref": "0403423000",
+      "population": "18864"
+    },
+    {
+      "name": "San Pablo",
+      "psgc_ref": "0403424000",
+      "population": "300166"
+    },
+    {
+      "name": "San Pedro",
+      "psgc_ref": "0403425000",
+      "population": "348968"
+    },
+    {
+      "name": "Santa Cruz",
+      "psgc_ref": "043426000",
+      "population": "126844"
+    },
+    {
+      "name": "Santa Maria",
+      "psgc_ref": "0403427000",
+      "population": "34102"
+    },
+    {
+      "name": "Santa Rosa",
+      "psgc_ref": "0403428000",
+      "population": "430920"
+    },
+    {
+      "name": "Victoria",
+      "psgc_ref": NaN,
+      "population": NaN
+    },
+    {
+      "name": "Siniloan",
+      "psgc_ref": "0403429000",
+      "population": "42533"
+    }
+  ],
+  "province_area_km2": 2108.412
+}
