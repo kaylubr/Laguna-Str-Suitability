@@ -46,9 +46,11 @@ OCCUPANCY_TARGET = "ttm_occupancy"
 SUITABILITY_INDICATOR_DIRECTIONS = {
     "predicted_revenue": "positive",
     "predicted_occupancy": "positive",
-    "poi_density": "positive",
+    "poi_density_total": "positive",
     "distance_to_nearest_tourist_attraction": "negative",
     "distance_to_nearest_transportation_facility": "negative",
 }
+
+SUITABILITY_INDICATORS = tuple(SUITABILITY_INDICATOR_DIRECTIONS)
 
 EARTH_RADIUS_KM = 6371.0
